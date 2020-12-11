@@ -4,8 +4,10 @@
     margin-bottom: 30px;
 }
 
-.ham-adj {
-    width: 180px;
-    height: 180px;
+.header-adj {
+    width: auto;
+    height: 100px;
     margin-bottom: 20px;
 }
+
+
