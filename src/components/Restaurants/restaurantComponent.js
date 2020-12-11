@@ -77,8 +77,8 @@ class RestaurantComponent extends React.Component {
                                 <h4>Reviews</h4>
                                     <ul>
                                         {this.props.reviews.map((review, index) =>
-                                                <div className="row">
-                                                    <span className="col-3"  key = {index}>
+                                                <div key={index} className="row">
+                                                    <span className="col-3">
                                                         {
                                                             review.user.image_url !== null &&
                                                             <img className="photo-adj" src={review.user.image_url} alt="userimg"/>
@@ -92,7 +92,7 @@ class RestaurantComponent extends React.Component {
                                                         <br/>
                                                         Rating: {review.rating}
                                                     </span>
-                                                    <span className="col-9"  key = {index}>
+                                                    <span className="col-9">
                                                         <p>{review.text}</p>
                                                         <p> {review.time_created}</p>
                                                     </span>
